@@ -1,5 +1,9 @@
 import { AiOutlineProduct } from "react-icons/ai";
 import { FaRegUser } from "react-icons/fa";
+import { FaTags } from "react-icons/fa6";
+import { GrCatalog } from "react-icons/gr";
+import { SiOpenmediavault } from "react-icons/si";
+import { TbBrandAbstract } from "react-icons/tb";
 import { TfiDashboard } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 
@@ -13,6 +17,26 @@ export default function SidebarMenu() {
     {
       name: "Porducts",
       icon: <AiOutlineProduct />,
+      url: "/",
+    },
+    {
+      name: "Catagoris",
+      icon: <GrCatalog />,
+      url: "/",
+    },
+    {
+      name: "Brands",
+      icon: <TbBrandAbstract />,
+      url: "/",
+    },
+    {
+      name: "Tags",
+      icon: <FaTags />,
+      url: "/",
+    },
+    {
+      name: "Media",
+      icon: <SiOpenmediavault />,
       url: "/",
     },
     {

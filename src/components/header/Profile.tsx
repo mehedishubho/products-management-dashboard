@@ -5,7 +5,7 @@ import { ImCoinPound } from "react-icons/im";
 import { IoIosLogOut } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 import { LuUser } from "react-icons/lu";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Profile() {
   const [activeDropdown, setActiveDropdown] = useState<boolean>(false);
@@ -15,6 +15,15 @@ export default function Profile() {
     if (profile.current && !profile.current.contains(event.target as Node)) {
       setActiveDropdown(false);
     }
+  };
+
+  // logout system
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem("authToken"); // Clear the token
+    navigate("/login"); // Redirect to the login page
+    location.reload();
   };
 
   useEffect(() => {
@@ -85,7 +94,7 @@ export default function Profile() {
             </li>
           ))}
         </ul>
-        <button className="logout-btn">
+        <button onClick={handleLogout} className="logout-btn">
           <span>Log out</span> <IoIosLogOut />
         </button>
       </div>

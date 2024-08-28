@@ -6,7 +6,7 @@ export default function Topbar() {
   return (
     <div className="topbar">
       <form className="topbar-search">
-        <div className="input-group">
+        <div className="search-group">
           <input type="text" placeholder="Search" />
           <button type="submit">
             <IoSearchOutline />

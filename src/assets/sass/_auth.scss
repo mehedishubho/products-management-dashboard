@@ -1,0 +1,35 @@
+.login {
+  width: 364px;
+  box-shadow: $shadow;
+  padding: 48px;
+  border-radius: 6px;
+  position: relative;
+
+  &-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  &-top {
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 30px;
+
+      img {
+        width: 114px;
+        height: auto;
+      }
+    }
+  }
+
+  .forget-pass-btn {
+    display: flex;
+    margin-left: auto;
+    font-size: 13px;
+    color: $primary;
+  }
+}

@@ -1,14 +1,10 @@
 import "./App.scss";
-import Sidebar from "./components/header/Sidebar";
-import Topbar from "./components/header/Topbar";
+import Root from "./components/basic/Root";
 
 function App() {
   return (
-    <div className="main">
-      <Sidebar />
-      <div className="main-wrp">
-        <Topbar />
-      </div>
+    <div className="app">
+      <Root />
     </div>
   );
 }
