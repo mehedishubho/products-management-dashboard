@@ -1,6 +1,16 @@
+interface ProductData {
+  name: string;
+  ipc: string;
+  catagory: string;
+  stock: number;
+  price: number;
+  status: string;
+  brand: string;
+}
+
 interface Data {
   procutHead: string[];
-  procutData: object[];
+  procutData: ProductData[];
 }
 
 const data: Data = {
