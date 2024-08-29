@@ -348,3 +348,35 @@
     }
   }
 }
+
+// footer
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-left {
+    p {
+      font-size: 16px;
+      color: $text-primary;
+
+      a {
+        color: $primary;
+      }
+    }
+  }
+
+  &-menu {
+    display: flex;
+    gap: 12px;
+
+    a {
+      color: $primary;
+      transition: 0.3s;
+
+      &:hover {
+        color: $text-primary;
+      }
+    }
+  }
+}

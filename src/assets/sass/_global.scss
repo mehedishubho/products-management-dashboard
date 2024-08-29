@@ -32,6 +32,10 @@ a {
     padding: 16px;
     width: 90%;
   }
+
+  &-body {
+    min-height: calc(100vh - 110px);
+  }
 }
 
 .dropdown {
