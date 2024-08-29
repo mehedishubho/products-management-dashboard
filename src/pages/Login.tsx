@@ -1,6 +1,6 @@
 import React, { FormEvent, useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 interface ErrorState {
   email?: boolean;
@@ -15,7 +15,7 @@ const Login: React.FC = () => {
   const [passwordType, setPasswordType] = useState<"password" | "text">(
     "password"
   );
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleLogin = (e: FormEvent) => {
     e.preventDefault();
