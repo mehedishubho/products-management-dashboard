@@ -17,7 +17,7 @@ export default function SidebarMenu() {
     {
       name: "Porducts",
       icon: <AiOutlineProduct />,
-      url: "/",
+      url: "/product",
     },
     {
       name: "Catagoris",

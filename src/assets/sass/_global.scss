@@ -35,6 +35,7 @@ a {
 
   &-body {
     min-height: calc(100vh - 110px);
+    padding: 16px 0;
   }
 }
 
@@ -69,6 +70,15 @@ a {
   font-size: 14px;
   text-transform: capitalize;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+
+  svg {
+    margin-right: 10px;
+    font-size: 16px;
+  }
 }
 
 .input-group {
@@ -76,13 +86,16 @@ a {
   flex-direction: column;
   gap: 10px;
   position: relative;
+  width: 100%;
 
   label {
     color: $text-primary;
     font-size: 14px;
   }
 
-  input {
+  input,
+  textarea,
+  select {
     width: 100%;
     height: 40px;
     border: $border;
@@ -90,6 +103,7 @@ a {
     border-radius: 6px;
     font-size: 14px;
     outline: none;
+    background-color: transparent;
 
     &:focus {
       border: 1px solid $primary;

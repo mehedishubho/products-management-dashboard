@@ -11,14 +11,14 @@ const Root: React.FC = () => {
     <Routes>
       <Route
         path="/"
-        element={<Navigate to={isAuthenticated ? "/dashboard" : "/login"} />}
+        element={isAuthenticated ? <Dashboard /> : <Navigate to={"/login"} />}
       />
       <Route
         path="/login"
         element={!isAuthenticated ? <Login /> : <Navigate to="/" />}
       />
       <Route
-        path="/dashboard/*"
+        path="/*"
         element={
           <ProtectedRoute isAuthenticated={!!isAuthenticated}>
             <Dashboard />

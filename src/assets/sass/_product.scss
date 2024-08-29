@@ -1,0 +1,201 @@
+.product {
+  &-top {
+    border-radius: 6px;
+    box-shadow: $shadow;
+    display: flex;
+    margin: 10px 0;
+    padding: 24px 0;
+
+    &-item {
+      width: 100%;
+      padding: 0 24px;
+      border-right: $border;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &-left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p,
+        span {
+          color: $text-secondary;
+          font-size: 15px;
+        }
+        strong {
+          color: $text-primary;
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+
+      &-right {
+        .icon {
+          width: 28px;
+          height: 28px;
+          background-color: rgba($color: $text-secondary, $alpha: 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 4px;
+
+          svg {
+            color: $success;
+          }
+        }
+      }
+    }
+  }
+
+  &-body {
+    box-shadow: $shadow;
+    margin: 16px 0;
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .product-search {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 20px 0;
+    border-bottom: $border;
+    justify-content: space-between;
+
+    .input-group {
+      width: 400px;
+    }
+  }
+
+  &-filter {
+    display: flex;
+    gap: 20px;
+    border-bottom: $border;
+    padding-bottom: 20px;
+  }
+
+  &-table {
+    width: 100%;
+    padding-top: 20px;
+
+    .img {
+      width: 38px;
+      height: 38px;
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: rgba($color: $secondary, $alpha: 1);
+    }
+
+    tr,
+    td,
+    th {
+      padding: 8px 0px;
+      border-bottom: $border;
+      text-align: left;
+    }
+
+    th {
+      color: $text-primary;
+      font-size: 16px;
+    }
+    td {
+      color: $text-secondary;
+
+      .product-table-details {
+        display: flex;
+        gap: 10px;
+
+        p {
+          color: $text-primary;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+
+      .status {
+        padding: 8px 16px;
+        max-width: 100px;
+        border-radius: 6px;
+        background-color: rgba($color: $success, $alpha: 0.2);
+        color: $success;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: capitalize;
+
+        &.inactive {
+          background-color: rgba($color: $error, $alpha: 0.2);
+          color: $error;
+        }
+        &.scheduled {
+          background-color: rgba($color: $warning, $alpha: 0.2);
+          color: $warning;
+        }
+      }
+
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+          border: none;
+          background-color: transparent;
+          color: $error;
+          font-size: 18px;
+        }
+        a {
+          color: $primary;
+          font-size: 18px;
+        }
+
+        .edit {
+          color: $warning;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 20px;
+
+    .pagination {
+      display: flex;
+      gap: 10px;
+    }
+
+    .page-item {
+      .page-link {
+        padding: 8px 16px;
+        border: $border;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.4s;
+      }
+
+      &.active {
+        .page-link {
+          background-color: $primary;
+          color: white;
+          border-color: $primary;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

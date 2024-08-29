@@ -1,0 +1,26 @@
+1st day
+    1. project start
+    2. enviroment setup
+    3. sidebar
+    4. topbar
+    5. profile module
+    6. notification module
+
+total 4 hours
+
+2nd day
+    1. router setup
+    2. login page
+    3. login system
+    4. logout system
+    5. sidebar update
+    6. fix some bugs
+
+total 4 hours
+
+3rd day
+    1. fix a bug
+    2. sub routes create
+    3. product page create 
+    4. product page update
+    5. footer design.
